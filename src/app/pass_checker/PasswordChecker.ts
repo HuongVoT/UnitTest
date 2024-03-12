@@ -2,7 +2,6 @@ export enum InvalidReasons {
   SHORT = 'Your password length is required not less than 8 characters',
   NONE_OF_UPPERCASE = 'Upper case letter is required!',
   NONE_OF_LOWERCASE = 'Lower case letter is required!',
-  VALID = '',
 }
 
 export interface CheckerResult {
