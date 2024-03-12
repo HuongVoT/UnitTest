@@ -30,8 +30,21 @@ describe('PasswordChecker test suite', () => {
     expect(actual.valid).toBe(false);
     expect(actual.reason).toContain(InvalidReasons.NONE_OF_LOWERCASE);
   });
+
+  //interaction 4: has at least 1 number
+  it('Password has no number letter is invalid!', () => {
+    const actual = sut.checkPassword('abcksdfef');
+    expect(actual.valid).toBe(false);
+    expect(actual.reason).toContain(InvalidReasons.NONE_OF_NUMBER);
+  });
+  //interaction 5: has at least 1 special character
+  it('Password has no special letter is invalid!', () => {
+    const actual = sut.checkPassword('1bcksdfef');
+    expect(actual.valid).toBe(false);
+    expect(actual.reason).toContain(InvalidReasons.NONE_OF_SPECIAL_CHARACTER);
+  });
   it('Your password is ok!', () => {
-    const actual = sut.checkPassword('123456abcD');
+    const actual = sut.checkPassword('123456abcD/');
     expect(actual.valid).toBe(true);
   });
 
