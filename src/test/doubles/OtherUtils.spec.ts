@@ -11,6 +11,7 @@ describe('OtherUtile test suite', () => {
         f2: 2,
       },
     };
+    // test for git push command
     const actual = calculateComplexity(testInfo as any);
     expect(actual).toBe(10);
   });
