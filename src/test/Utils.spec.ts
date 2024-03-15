@@ -71,17 +71,7 @@ describe('Utils test suite', () => {
     });
     test('return right characters', () => {
       const actual = getStringInfo('My-string');
-      expect(actual.characters).toEqual([
-        'M',
-        'y',
-        '-',
-        's',
-        't',
-        'r',
-        'i',
-        'n',
-        'g',
-      ]);
+      expect(actual.characters).toEqual(['M', 'y', '-', 's', 't', 'r', 'i', 'n', 'g']);
       expect(actual.characters).toContain<string>('M');
       expect(actual.characters).toEqual(
         expect.arrayContaining(['M', 'y', '-', 's', 't', 'r', 'i', 'n', 'g']),
