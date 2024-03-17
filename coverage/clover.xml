@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1710483740378" clover="3.2.0">
-  <project timestamp="1710483740378" name="All files">
+<coverage generated="1710495593713" clover="3.2.0">
+  <project timestamp="1710495593713" name="All files">
     <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="11" coveredelements="11" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
     <file name="calculateAge.ts" path="/Users/admin/Documents/FirstTypescript/src/app/calculateAge/calculateAge.ts">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>

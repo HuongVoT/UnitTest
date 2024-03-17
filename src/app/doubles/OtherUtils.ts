@@ -7,7 +7,7 @@ export type stringInfo = {
 };
 
 export function calculateComplexity(stringInfo: stringInfo) {
-  if (stringInfo.extraInfo != undefined)
-    return Object.keys(stringInfo.extraInfo).length * stringInfo.length;
-  else return 0;
+  return stringInfo.extraInfo != undefined
+    ? Object.keys(stringInfo.extraInfo).length * stringInfo.length
+    : 0;
 }
